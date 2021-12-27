@@ -1,0 +1,14 @@
+<div class="d-flex">
+  <ng-select
+    [items]="keys"
+    [addTag]="true"
+    addTagText="Add tag"
+    [(ngModel)]="searchKeywords"
+    (ngModelChange)="test($event)"
+    [multiple]="true"
+  >
+  </ng-select>
+  <button type="button" (click)="searchTrigger.emit()">
+    <span class="oi oi-magnifying-glass"></span>
+  </button>
+</div>

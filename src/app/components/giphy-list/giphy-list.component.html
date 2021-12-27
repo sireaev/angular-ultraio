@@ -1,0 +1,26 @@
+<div class="pb-5">
+  <app-giphy-search
+    (keywordChange)="request.q = $event"
+    (searchTrigger)="searchImages()"
+  ></app-giphy-search>
+</div>
+<div class="container">
+  <div class="d-flex align-items-center flex-column">
+    <div class="content">
+      <app-giphy-image
+        class="item"
+        *ngFor="let image of images"
+        [giphy]="image"
+      ></app-giphy-image>
+    </div>
+    <div *ngIf="!isFetchDone" class="text-center py-5">
+      <button
+        class="btn btn-outline-primary"
+        type="button"
+        (click)="fetchNext()"
+      >
+        More...
+      </button>
+    </div>
+  </div>
+</div>

@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  giphyapi: '5M4nOsOhbINNcFDUfMPxMm3oQv1UvGGq',
+  giphykey: '5M4nOsOhbINNcFDUfMPxMm3oQv1UvGGq',
+  giphyapi: 'https://api.giphy.com/v1/gifs',
 };
 
 /*

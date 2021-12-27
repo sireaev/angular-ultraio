@@ -1,0 +1,18 @@
+ng-select {
+    width: 100%;
+    
+    ::ng-deep .ng-select-container {
+        height: 100%;
+    }
+}
+
+button {
+    padding: 20px;
+    border: 0;
+    color: white;
+    background: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 100%);
+
+    &>span {
+        font-size: 20px;
+    }
+}

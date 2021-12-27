@@ -1,0 +1,29 @@
+$big-size: 300px;
+$medium-size: 200px;
+$small-size: 150px;
+$tiny-size: 100px;
+
+.img-fluid {
+    min-height: $big-size;
+    max-height: $big-size;
+    width: $big-size;
+    background-size: cover;
+    cursor: pointer;
+    @media screen and (max-width: 1000px) {
+        width: $medium-size;
+        max-height: $medium-size;
+        min-height: $medium-size;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: $small-size;
+        max-height: $small-size;
+        min-height: $small-size;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: $tiny-size;
+        max-height: $tiny-size;
+        min-height: $tiny-size;
+    }
+}
