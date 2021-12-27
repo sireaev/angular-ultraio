@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  giphyapi: '5M4nOsOhbINNcFDUfMPxMm3oQv1UvGGq',
 };
