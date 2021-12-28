@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 import { GiphySearchComponent } from './giphy-search.component';
 
@@ -8,7 +10,8 @@ describe('GiphySearchComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [GiphySearchComponent],
+      imports: [NgSelectModule, FormsModule],
+      declarations: [GiphySearchComponent]
     }).compileComponents();
   });
 

@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { GifModel } from 'src/app/interfaces/gif.model';
 import { GiphyParams } from 'src/app/interfaces/gihpy-params.model';
-import { GiphyService } from 'src/app/services/giphy.service';
-import { clean } from 'src/app/utils/utils';
+import { GiphyService } from '../../services/giphy.service';
+import { clean } from '../../utils/utils';
 
 @Component({
   selector: 'app-giphy-list',
   templateUrl: './giphy-list.component.html',
-  styleUrls: ['./giphy-list.component.scss'],
+  styleUrls: ['./giphy-list.component.scss']
 })
 export class GiphyListComponent implements OnInit {
   images: GifModel[] = [];
   request: GiphyParams = {
     limit: 9,
-    offset: 0,
+    offset: 0
   };
   isFetchDone: boolean = false;
   constructor(private service: GiphyService) {}

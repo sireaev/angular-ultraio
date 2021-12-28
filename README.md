@@ -1,27 +1,65 @@
 # AngularUltraio
+---
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+Boilerplate with Bootstrap 5.
 
-## Development server
+This project fetch list of giphy trends and search on multitag purpose.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Perquisites
 
-## Code scaffolding
+### Users
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js
+- NPM
 
-## Build
+### Developers
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular CLI (`npm i -g @angular/cli`)
+- Jest (`npm i -g jest`)
+- Node.js
 
-## Running unit tests
+## Getting started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Go to the root folder of the project and run `npm i`
 
-## Running end-to-end tests
+environment.ts/environment.prod.ts
+```
+export const environment = {
+  production: false/true,
+  giphykey: 'SET_YOUR_GIPHY_API_KEY',
+  giphyapi: 'https://api.giphy.com/v1/gifs',
+}
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Run in development mode
 
-## Further help
+`npm start`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Build Production
+
+`npm run build --prod`
+
+## Run Tests
+
+`npm run test`
+
+## Watch test results (bonus)
+
+`npm run test:coverage`
+
+**The results of test coverage are located in rootFolder/coverage**
+
+## Depenedencies
+
+- Angular 13.1.0
+- Node 14.17.0
+- Typescript 4.5.2
+- NPM 6.14.3
+- Bootstrap 5.1.3
+- ng-select 8.1.1
+- jest 27.4.5
+
+### TODO:
+[ ] Add dotenv
+[ ] Add docker
+[ ] Deploy to cloud

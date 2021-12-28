@@ -4,7 +4,7 @@
     [addTag]="true"
     addTagText="Add tag"
     [(ngModel)]="searchKeywords"
-    (ngModelChange)="test($event)"
+    (ngModelChange)="keywordChange.emit($event)"
     [multiple]="true"
   >
   </ng-select>

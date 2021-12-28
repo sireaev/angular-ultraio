@@ -3,7 +3,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 @Component({
   selector: 'app-giphy-search',
   templateUrl: './giphy-search.component.html',
-  styleUrls: ['./giphy-search.component.scss'],
+  styleUrls: ['./giphy-search.component.scss']
 })
 export class GiphySearchComponent {
   searchKeywords: Event | undefined;
@@ -12,8 +12,4 @@ export class GiphySearchComponent {
 
   keys = [];
   constructor() {}
-
-  test(event: any) {
-    this.keywordChange.emit(event.join(' '));
-  }
 }

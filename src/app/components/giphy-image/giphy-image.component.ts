@@ -4,7 +4,7 @@ import { GifModel } from 'src/app/interfaces/gif.model';
 @Component({
   selector: 'app-giphy-image',
   templateUrl: './giphy-image.component.html',
-  styleUrls: ['./giphy-image.component.scss'],
+  styleUrls: ['./giphy-image.component.scss']
 })
 export class GiphyImageComponent implements OnInit {
   @Input() giphy: GifModel | undefined;
@@ -17,10 +17,10 @@ export class GiphyImageComponent implements OnInit {
 
   setImageStyle(): void {
     if (!this.giphy) return;
-    console.log('giphy', this.giphy);
+
     this.giphyImage = {
       backgroundImage: `url(${this.giphy.images.fixed_height_downsampled.url})`,
-      backgroundRepeat: 'no-repeat',
+      backgroundRepeat: 'no-repeat'
     };
   }
 }
